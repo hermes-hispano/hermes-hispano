@@ -1,0 +1,18 @@
+name: Bienvenida
+on:
+  pull_request_target:
+    types: [opened]
+  issues:
+    types: [opened]
+permissions:
+  issues: write
+  pull-requests: write
+jobs:
+  saludo:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/first-interaction@v1
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          issue-message: "Gracias por escribir. Lo leemos y te respondemos en menos de 72 horas. Si es una duda, incluye tu versión (`hermes --version`), tu sistema y el modelo que usas."
+          pr-message: "Gracias por tu primera aportación. Ahora pasan las comprobaciones automáticas; después la reproducimos en el laboratorio y te respondemos en menos de 72 horas. Los requisitos están en CONTRIBUTING.md."

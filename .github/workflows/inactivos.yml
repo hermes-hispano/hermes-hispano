@@ -1,0 +1,20 @@
+name: Propuestas sin respuesta
+on:
+  schedule:
+    - cron: "0 7 * * *"
+permissions:
+  issues: write
+  pull-requests: write
+jobs:
+  stale:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/stale@v9
+        with:
+          only-labels: falta-informacion
+          days-before-stale: 23
+          days-before-close: 7
+          stale-issue-message: "Seguimos esperando la información que pedimos. Si no hay respuesta en 7 días, lo cerraremos; se puede reabrir cuando quieras."
+          stale-pr-message: "Seguimos esperando los cambios que pedimos. Si no hay respuesta en 7 días, lo cerraremos; se puede reabrir cuando quieras."
+          close-issue-message: "Cerrado por falta de respuesta. Puedes reabrirlo cuando tengas la información."
+          close-pr-message: "Cerrado por falta de respuesta. Puedes reabrirlo cuando tengas los cambios."

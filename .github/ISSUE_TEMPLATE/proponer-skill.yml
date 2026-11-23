@@ -1,0 +1,12 @@
+name: Proponer una habilidad para evaluar
+description: Una habilidad de la comunidad que quieres que probemos con y sin ella
+labels: [skill]
+body:
+  - type: input
+    id: enlace
+    attributes: {label: Enlace a la habilidad}
+    validations: {required: true}
+  - type: textarea
+    id: uso
+    attributes: {label: Para qué la usas, description: Tareas concretas en las que te ha ayudado}
+    validations: {required: true}

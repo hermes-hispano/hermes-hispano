@@ -1,0 +1,8 @@
+name: Proponer una guía
+description: Un tema que falta y que te gustaría ver probado
+labels: [idea]
+body:
+  - type: textarea
+    id: tema
+    attributes: {label: Qué guía falta y por qué}
+    validations: {required: true}

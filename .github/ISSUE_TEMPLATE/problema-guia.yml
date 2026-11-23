@@ -1,0 +1,20 @@
+name: Problema en una guía
+description: Algo de una guía no funciona o no se entiende
+labels: [guia]
+body:
+  - type: input
+    id: guia
+    attributes: {label: Guía, description: Enlace o nombre de la guía}
+    validations: {required: true}
+  - type: input
+    id: version
+    attributes: {label: Versión de Hermes, description: Salida de hermes --version}
+    validations: {required: true}
+  - type: input
+    id: sistema
+    attributes: {label: Sistema y modelo}
+    validations: {required: true}
+  - type: textarea
+    id: que
+    attributes: {label: Qué ha pasado, description: En qué paso y qué salida has visto}
+    validations: {required: true}

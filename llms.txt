@@ -1,0 +1,14 @@
+# Hermes Hispano
+
+> Comunidad no oficial en español de Hermes Agent (Nous Research): guías probadas, habilidades evaluadas con y sin ellas, resultados de laboratorio y noticias de versiones. Todo el contenido está marcado como «probado» o «datos públicos» con sus fuentes.
+
+## Normas
+- [Cómo trabajamos](https://github.com/hermes-hispano/hermes-hispano/blob/main/COMO-TRABAJAMOS.md): criterios de publicación, evaluación de habilidades y modelos
+- [Cómo aportar](https://github.com/hermes-hispano/hermes-hispano/blob/main/CONTRIBUTING.md)
+- [Instrucciones para agentes](https://github.com/hermes-hispano/hermes-hispano/blob/main/AGENTS.md)
+
+## Contenido
+- [Guías](https://github.com/hermes-hispano/hermes-hispano/tree/main/guias)
+- [Habilidades](https://github.com/hermes-hispano/hermes-hispano/tree/main/skills)
+- [Laboratorio](https://github.com/hermes-hispano/hermes-hispano/tree/main/laboratorio)
+- [Noticias](https://github.com/hermes-hispano/hermes-hispano/tree/main/noticias)
